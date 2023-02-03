@@ -1,6 +1,6 @@
 <template>
-  <header class="text-gray-600 body-font">
-    <div class="flex justify-between p-5 w-full">
+  <header class="text-gray-600 body-font py-5 px-5 md:px-16">
+    <div class="flex justify-between w-full">
       <div class="flex text-2xl text-gray-900 font-bold">
         <span class="text-[#ff2a7e]">Just</span><span>Shop</span>
       </div>
