@@ -6,6 +6,7 @@
       :title="title"
       :price="price"
       :image="image"
+      :link="id"
     />
   </div>
 </template>
