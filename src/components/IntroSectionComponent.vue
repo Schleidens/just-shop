@@ -11,11 +11,13 @@
         />
       </div>
       <div class="lg:flex-grow flex flex-col md:items-start text-left">
-        <h1
-          class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+        <a :href="/product/ + link">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            {{ title }}
+          </h1></a
         >
-          {{ title }}
-        </h1>
         <p class="mb-8 leading-relaxed">
           {{ description }}
         </p>
@@ -29,5 +31,6 @@ defineProps({
   title: String,
   description: String,
   image: String,
+  link: String,
 });
 </script>
