@@ -16,7 +16,7 @@ defineProps({
   image: String,
   price: Number,
   title: String,
-  link: String,
+  link: Number,
 });
 </script>
 

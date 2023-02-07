@@ -31,6 +31,6 @@ defineProps({
   title: String,
   description: String,
   image: String,
-  link: String,
+  link: Number,
 });
 </script>
