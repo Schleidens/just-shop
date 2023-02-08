@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap mt-5 px-5 md:px-36">
+  <div v-if="products != 0" class="flex flex-wrap mt-5 px-5 md:px-36">
     <ProductComponent
       v-for="{ id, title, price, image } in products"
       :key="id"
@@ -9,10 +9,14 @@
       :link="id"
     />
   </div>
+  <div v-else class="flex flex-wrap mt-5 px-5 md:px-36">
+    <ProductComponentSkeleton v-for="index in 8" :key="index" />
+  </div>
 </template>
 
 <script setup>
 import ProductComponent from "./ProductComponent.vue";
+import ProductComponentSkeleton from "./skeleton/ProductComponentSkeleton.vue";
 
 import { ref, onMounted } from "vue";
 import axios from "axios";
