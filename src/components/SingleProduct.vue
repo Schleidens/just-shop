@@ -1,15 +1,18 @@
 <template>
   <SingleProductComponent
+    v-if="product != 0"
     :categorie="product.category"
     :title="product.title"
     :description="product.description"
     :image="product.image"
     :price="product.price"
   />
+  <SingleProductSkeleton v-else />
 </template>
 
 <script setup>
 import SingleProductComponent from "./SingleProductComponent.vue";
+import SingleProductSkeleton from "./skeleton/SingleProductSkeleton.vue";
 
 import axios from "axios";
 import { ref, onMounted } from "vue";
