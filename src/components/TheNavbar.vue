@@ -1,17 +1,11 @@
 <template>
-  <header class="text-gray-600 body-font">
-    <div class="flex justify-between p-5 w-full">
+  <header class="text-gray-600 body-font py-5 px-5 md:px-16">
+    <div class="flex justify-between w-full">
       <div class="flex text-2xl text-gray-900 font-bold">
-        <span class="text-[#ff2a7e]">Just</span><span>Shop</span>
+        <RouterLink to="/"
+          ><span class="text-[#ff2a7e]">Just</span><span>Shop</span></RouterLink
+        >
       </div>
-      <nav class="hidden md:flex text-base leading-9">
-        <a class="mr-5 hover:text-gray-900">
-          <RouterLink to="/">Home</RouterLink>
-        </a>
-        <a class="hover:text-gray-900">
-          <RouterLink to="/categories">Categories</RouterLink>
-        </a>
-      </nav>
       <button
         class="inline-flex items-center hover:bg-gray-100 border-0 py-1 px-3 focus:outline-none rounded text-base"
       >
